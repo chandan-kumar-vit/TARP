@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Election</title>
+	  <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'-->
+	  <!--link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'-->
+	  <link href='./bootstrap.min.css' rel='stylesheet' type='text/css'>	  
+	</head>
+	<body class="container">
+	   <img src="logo.jpg"   alt="ECI logo" style="width:200px;height:200px;" >
+	  <h1>GENERAL ELECTIONS 2024</h1>
+	  <div id="ID">Your Account ID: </div>
+	  <div id="bal">Balance: </div>
+	  <hr>
+	  <div class="table-responsive">
+		<table class="table table-bordered">
+		  <thead>
+			<tr>
+			  <th>Candidate</th>
+			  <th>Votes</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>BJP</td>
+			  <td id="candidate-1"></td>
+			</tr>
+			<tr>
+			  <td>Congress</td>
+			  <td id="candidate-2"></td>
+			</tr>
+			<tr>
+			  <td>AAP</td>
+			  <td id="candidate-3"></td>
+			</tr>
+		  </tbody>
+		</table>
+	  </div>
+	  <!--input type="text" id="candidate" /-->
+		<select id="candidate">
+			  <option value="BJP">BJP</option>
+			  <option value="Congress">Congress</option>
+			  <option value="AAP">AAP</option>
+		  </select>
+	  <a href="#" onclick="voteForCandidate()" class="btn btn-primary" id="vote">Vote</a>
+	  <a href="#" onclick="countForCandidate()" class="btn btn-primary">Count</a>
+	  <hr>	  
+	  <a href="#" onclick="winner()" class="btn btn-primary" id="win1" disabled>Winner</a>
+	  <br><br>
+	  <div id="win"></div>
+	</body>
+	<!--script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script-->
+	<script src="web3.js"></script>
+	<!--script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script-->
+	<script src="jquery-3.1.1.slim.min.js"></script>
+	<script src="index.js"></script>	
+</html>
